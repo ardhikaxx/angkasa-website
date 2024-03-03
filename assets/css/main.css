@@ -1,16 +1,4 @@
-/**
-* Template Name: PhotoFolio
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Set main reusable colors and fonts using CSS variables
-# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Poppins", sans-serif;
@@ -44,7 +32,7 @@ a {
 }
 
 a:hover {
-  color: #32cf93;
+  color: #efefef;
   text-decoration: none;
 }
 
@@ -55,6 +43,28 @@ h4,
 h5,
 h6 {
   font-family: var(--font-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f0f0f0;
 }
 
 /*--------------------------------------------------------------
@@ -81,7 +91,7 @@ h6 {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #5bd9a9;
+  background: #ffffff;
   margin: 4px 10px;
 }
 
@@ -122,20 +132,23 @@ h6 {
 
 .page-header .cta-btn {
   font-family: var(--font-primary);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   display: inline-block;
   padding: 12px 40px;
-  border-radius: 4px;
+  border-radius: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.3s;
-  color: #fff;
+  border: 2px solid transparent;
+  color: #000000;
   background: var(--color-primary);
 }
 
 .page-header .cta-btn:hover {
-  background: #2cbc85;
+  background: #000000;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -148,20 +161,15 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background: var(--color-primary);
+  background: #000;
   width: 44px;
   height: 44px;
-  border: 2px solid transparent;
-  border-radius: 50px;
+  border: 2px solid #fff;
+  border-radius: 10px;
   transition: all 0.4s;
 }
 
 .scroll-top i {
-  font-size: 24px;
-  color: #000000;
-  line-height: 0;
-}
-.scroll-top i:hover {
   font-size: 24px;
   color: #ffffff;
   line-height: 0;
@@ -710,6 +718,14 @@ h6 {
   }
 }
 
+.notes {
+  margin-top: 80px;
+}
+
+.order {
+  margin-top: 20px;
+}
+
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
@@ -956,6 +972,7 @@ h6 {
   background: var(--color-secondary);
   height: 100%;
   overflow: hidden;
+  margin-top: 50px;
   z-index: 1;
 }
 
@@ -970,7 +987,7 @@ h6 {
 
 .services .service-item i {
   background: var(--color-primary);
-  color: #fff;
+  color: #000000;
   font-size: 24px;
   transition: 0.3s;
   display: flex;
@@ -1009,11 +1026,11 @@ h6 {
 
 .services .service-item:hover h4 a,
 .services .service-item:hover p {
-  color: #fff;
+  color: #000000;
 }
 
 .services .service-item:hover i {
-  background: #fff;
+  background: #000000;
   color: var(--color-primary);
 }
 
@@ -1082,7 +1099,7 @@ h6 {
 
 .contact .info-item:hover i {
   background: var(--color-primary);
-  color: #fff;
+  color: #000000;
 }
 
 .contact .php-email-form {
